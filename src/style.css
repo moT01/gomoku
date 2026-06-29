@@ -202,8 +202,8 @@
 }
 
 .btn:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px var(--blue-mid);
+  outline: 2px solid var(--blue-mid);
+  outline-offset: 2px;
 }
 
 .btn:disabled {
@@ -395,11 +395,14 @@
 
 .hit-area:focus-visible {
   outline: none;
+}
+
+.keyboard-nav .hit-area:focus-visible {
   stroke: var(--blue-mid);
   stroke-width: 1.5;
 }
 
-.hit-area.clickable:focus-visible {
+.keyboard-nav .hit-area.clickable:focus-visible {
   fill: rgba(153, 201, 255, 0.2);
 }
 
