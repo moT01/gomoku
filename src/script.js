@@ -886,6 +886,8 @@ function renderPlay() {
         resultText = state.winner === 1 ? 'Player 1 wins!' : 'Player 2 wins!';
       }
       announceStatus(resultText);
+      const playAgain = overlay.querySelector('#play-again-btn');
+      if (playAgain) playAgain.focus();
     }, 2000);
   }
 }
